@@ -1,6 +1,7 @@
 
 import AlbumComponent from "../components/AlbumComponent";
 import Navbar from "../components/Navbar";
+import ParticlesDemo from "../components/ParticlesDemo";
 
 import About from "./About";
 export default function Home() {
@@ -38,14 +39,16 @@ export default function Home() {
       </section>
 
       <section className="pl-4 section py-16 md:py-36 scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl">
+      
         <div className="">
-          <div className="mr-3">
+        <ParticlesDemo/>
+          <div className="mr-3 mt-15 w-1/2">
           <AlbumComponent/>
           </div>
          
           
            
-          
+         
         </div>
       </section>
      
