@@ -8,6 +8,19 @@ export default {
         'light-blue': '#f3f4f6',
         'blue': '#1a202c',
       }),
+      animation: {
+        shimmer: "shimmer 8s infinite",
+      },
+      keyframes: {
+        shimmer: {
+          "0%, 90%, 100%": {
+            "background-position": "calc(-100% - var(--shimmer-width)) 0",
+          },
+          "30%, 60%": {
+            "background-position": "calc(100% + var(--shimmer-width)) 0",
+          },
+        },
+      },
       colors: {
         indigo: {
           50: "#eef2ff",

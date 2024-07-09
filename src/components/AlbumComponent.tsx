@@ -1,7 +1,7 @@
 
 const AlbumComponent = () => {
   return (
-    <div className=" flex flex-col">
+    <div className=" flex flex-col ">
       <div className="relative max-w-xl w-full h-36 bg-white rounded-lg shadow-lg overflow-hidden mb-32">
         <div className="absolute inset-0 rounded-lg overflow-hidden bg-red-200">
           <img src="https://images.unsplash.com/photo-1543794327-59a91fb815d1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=200&q=80" alt="" />

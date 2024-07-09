@@ -1,5 +1,5 @@
-
 import AlbumComponent from "../components/AlbumComponent";
+import BlurInDemo from "../components/BlurInDemo";
 import Navbar from "../components/Navbar";
 import ParticlesDemo from "../components/ParticlesDemo";
 
@@ -16,10 +16,8 @@ export default function Home() {
             className=" rounded-full size-32 overflow-hidden mr-4"
           />
         </div>
-        <div>
-          <h1 className=" font-bold text-4xl mb-2 text-white">
-            Hola, soy emmanuel
-          </h1>
+        <div className="">
+          <BlurInDemo />
           <p className=" font-semibold text-left mb-1 text-gray-400 ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia{" "}
             <br />
@@ -32,6 +30,7 @@ export default function Home() {
             Email
           </a>
         </button>
+        
       </section>
 
       <section className="pl-4 section py-16 md:py-36 scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl">
@@ -39,17 +38,41 @@ export default function Home() {
       </section>
 
       <section className="pl-4 section py-16 md:py-36 scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl">
-      
-        <div className="">
-        <ParticlesDemo/>
-          <div className="mr-3 mt-15 w-1/2">
-          <AlbumComponent/>
+        <ParticlesDemo />
+        
+        <div className="md:flex w-fit">
+          <div className="mr-3 mt-15 md:w-1/2 mb-8">
+            <div className="">
+              <AlbumComponent /> 
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-star md:w-1/2 mr-2">
+            <a
+              className="hover:bg-gray-700 delay-50 duration-100 bg-gray-800 p-5 rounded-lg group "
+              href=""
+            >
+              <img
+                src="https://picsum.photos/250/250"
+                className="w-full rounded shadow"
+                alt="Album Cover"
+              />
+
+              <div className="mt-5">
+                <h3 className="text-gray-200 font-bold"> Top 50 - Global</h3>
+                <p className="text-gray-400 font-light mt-2 text-xs">
+                  Your daily update of the most played track from around the
+                  world...
+                </p>
+              </div>
+            </a>
           </div>
          
-          
-           
-         
         </div>
+        <div>
+       
+        </div>
+        
       </section>
      
     </>
