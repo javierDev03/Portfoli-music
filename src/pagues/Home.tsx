@@ -1,4 +1,5 @@
 import AlbumComponent from "../components/AlbumComponent";
+import { AnimatedShinyTextDemo } from "../components/AnimatedShinyTextDemo";
 import BlurInDemo from "../components/BlurInDemo";
 import Navbar from "../components/Navbar";
 import ParticlesDemo from "../components/ParticlesDemo";
@@ -49,7 +50,7 @@ export default function Home() {
 
           <div className="flex flex-col justify-star md:w-1/2 mr-2">
             <a
-              className="hover:bg-gray-700 delay-50 duration-100 bg-gray-800 p-5 rounded-lg group "
+              className="hover:bg-gray-800  duration-300 bg-[#171717] p-5 rounded-lg group "
               href=""
             >
               <img
@@ -66,13 +67,17 @@ export default function Home() {
                 </p>
               </div>
             </a>
+            <div className="w-max pt-1">
+          <AnimatedShinyTextDemo/>
           </div>
-         
-        </div>
-        <div>
-       
+          </div>
+          
+        
         </div>
         
+       
+      
+      
       </section>
      
     </>
